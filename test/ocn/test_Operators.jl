@@ -11,8 +11,8 @@ import KernelAbstractions as KA
 
 mesh_fn = DownloadMesh(PlanarTest)
 
-#backend = KA.CPU()
-backend = CUDABackend();
+backend = KA.CPU()
+#backend = CUDABackend();
 
 # Read in the purely horizontal doubly periodic testing mesh
 HorzMesh = ReadHorzMesh(mesh_fn; backend=backend)
